@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="responsive page.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile_container">
+                <div class="profile_img">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQGqJRJk0oe_BQ/profile-displayphoto-shrink_200_200/0/1698246216523?e=2147483647&v=beta&t=rb8J5uT1IfOi34q7QE31Ulm9v4W9RnjVrxtAKzifLzE" alt="pushkar jassalr">
+                </div>
+                <div>
+                    <h1 class="profile_name">
+                        <span class="Fname">Pushkar</span>
+                        <span class="Lname">Jassal</span> 
+                    </h1>
+                    <p class="profile_title">B.E. CSE Under Grad. </p>
+                    
+                    <head>
+                      <style>
+                        .typing-text {
+                          color: rgb(0, 238, 255);
+                          font-size: 25px;
+                          font-weight: bold;
+                          text-transform: uppercase;
+                        }
+                      </style>
+                    </head>
+                    
+
+
+                    <p id="typing-text" style="color: rgb(119, 119, 119); font-size: 15px; font-weight: bold; text-transform: uppercase;"></p>
+
+                      <script>
+                        const text = ["The only limit to our realization of tomorrow will be our doubts of today.","Coding is the art of turning coffee into code and bugs into features!", "The best way to predict the future is to invent it.","Simplicity is the ultimate sophistication.","The best way to get a project done is to start it."];
+                        const typingTextElement = document.getElementById("typing-text");
+                        const thirdLineElement = document.getElementById("third-line");
+                    
+                        let i = 0;
+                        let j = 0;
+                        let delay = 50;
+                    
+                        function typeWriter() {
+                          if (j < text[i].length) {
+                            typingTextElement.innerHTML += text[i][j];
+                            j++;
+                    
+                            if (text[i][j] === ".") {
+                              delay = 150;
+                            } else if (text[i][j] === " ") {
+                              delay = 100;
+                            } else {
+                              delay = 100;
+                            }
+                    
+                            setTimeout(typeWriter, delay);
+                          } else {
+                            setTimeout(eraseText, delay);
+                          }
+                        }
+                    
+                        function eraseText() {
+                          if (j > 0) {
+                            typingTextElement.innerHTML = typingTextElement.innerHTML.slice(0, -1);
+                            j--;
+                    
+                            if (text[i][j] === ".") {
+                              delay = 25;
+                            } else if (text[i][j] === " ") {
+                              delay = 25;
+                            } else {
+                              delay = 25;
+                            }
+                    
+                            setTimeout(eraseText, delay);
+                          } else {
+                            j = 0;
+                            i = (i + 1) % text.length;
+                            setTimeout(typeWriter, delay);
+                          }
+                        }
+                    
+                        setTimeout(typeWriter, delay);
+                      </script>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    <div class="group-1">
+        <div class="hobbies">
+            <h2 class="title">Achievements</h2>
+            
+        </div>
+        <table>
+          
+        
+          <div class="certificate-item">
+            <p class="item_preTitle">2024</p>
+            <h3 class="item_title">Certificate for Industrial Training</h3>
+            <p class="item_subtitle">IIT Bhubaneshwar</p>
+            <a href="d:\certificates\Pushkar_Jan_2024_participation_45749.pdf" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+            <a href="https://www.1stop.ai/verify-certificate" target="_blank">
+                <img src="https://cdn3.emoji.gg/emojis/1571-verified-dark.png" alt="Verification">
+              </a>
+          </div></table>
+          <div class="certificate-item">
+            <p class="item_preTitle">2023</p>
+            <h3 class="item_title">Professional Training Certification for Core & Advance Java</h3>
+            <p class="item_subtitle">College of Computer and Information Technology (CCIT)</p>
+            <a href="https://www.linkedin.com/posts/activity-7181348105101930496--oRG?utm_source=share&utm_medium=member_android" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+</div>
+          </div>
+          <div class="certificate-item">
+            <p class="item_preTitle">2024</p>
+            <h3 class="item_title">Microsoft Power Platform Functional Consultant</h3>
+            <p class="item_subtitle">Microsoft</p>
+            <a href="https://www.linkedin.com/posts/activity-7181349911710375936-6spi?utm_source=share&utm_medium=member_android" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+
+          </div>
+
+          <div class="certificate-item">
+            <p class="item_preTitle">2024</p>
+            <h3 class="item_title">Microsoft Power Platform App Maker</h3>
+            <p class="item_subtitle">Microsoft</p>
+            <a href="https://www.linkedin.com/posts/activity-7181349935504584706-CIIJ?utm_source=share&utm_medium=member_android" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+
+          </div>
+          <div class="certificate-item">
+            <p class="item_preTitle">2024</p>
+            <h3 class="item_title"> Microsoft Power Automate RPA Developer</h3>
+            <p class="item_subtitle">Microsoft</p>
+            <a href="https://www.linkedin.com/posts/activity-7181349956983697408-ct0z?utm_source=share&utm_medium=member_android" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+
+          </div>
+
+          <div class="certificate-item">
+            <p class="item_preTitle">2024</p>
+            <h3 class="item_title"> Microsoft Power Platform Fundamentals</h3>
+            <p class="item_subtitle">Microsoft</p>
+            <a href="D:\certificates\Achievements - pushkarjassal-7909 _ Microsoft Learn 4.pdf" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+
+          </div>
+          <div class="certificate-item">
+            <p class="item_preTitle">2023</p>
+            <h3 class="item_title"> Certificate of Excellence in Python</h3>
+            <p class="item_subtitle">Coding Ninjas</p>
+            <a href="D:\certificates\certificate36001853b6d94f539b0c5f5d7318c6b784ba0da.pdf" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+
+          </div>
+
+          <div class="certificate-item">
+            <p class="item_preTitle">2023</p>
+            <h3 class="item_title"> Course Completion Introduction to Python</h3>
+            <p class="item_subtitle">Coding Ninjas</p>
+            <a href="D:\certificates\certificate3600185556f742187bd67d1932e33917ca24205.pdf" target="_blank">
+                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+              </a>
+              </div>
+              <div class="certificate-item">
+                <p class="item_preTitle">2023</p>
+                <h3 class="item_title">  Financial Accounting</h3>
+                <p class="item_subtitle">Coursera/Mc Master university</p>
+                <a href="D:/certificates/Coursera%20W5A3FZ25RL4T%20(1).pdff" target="_blank">
+                    <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+                  </a>
+                  </div>
+                  <div class="certificate-item">
+                    <p class="item_preTitle">2023</p>
+                    <h3 class="item_title">  The Arts and Science of Relationships</h3>
+                    <p class="item_subtitle">Coursera/University of Tronto</p>
+                    <a href="D:/certificates/pushkar%20jassal%202265.pdf" target="_blank">
+                        <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+                      </a>
+                      </div>
+                      <div class="certificate-item">
+                        <p class="item_preTitle">2024</p>
+                        <h3 class="item_title">  Programming Fundamentals / C Programing</h3>
+                        <p class="item_subtitle">Coursera/Duke University</p>
+                        <a href="D:/certificates/Coursera%20HYM8T3VF73LN.pdf" target="_blank">
+                            <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+                          </a>
+                          </div>
+                          <div class="certificate-item">
+                            <p class="item_preTitle">2024</p>
+                            <h3 class="item_title">  Cyber Security and Computer Networkings</h3>
+                            
+                            <p class="item_subtitle">Coursera/Google</p>
+                            <a href="D:/certificates/Coursera%208B7NLM5NAWBJ.pdf" target="_blank">
+                                <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+                              </a>
+                              </div>
+                              <div class="certificate-item">
+                                <p class="item_preTitle">2024</p>
+                                <h3 class="item_title"> Digital Transformation in Financial Services Specialization</h3>
+                                
+                                <p class="item_subtitle">Coursera/Copenhagen Business School</p>
+                                <a href="D:/certificates/Coursera%20XS8WQHFVEG9N.pdf" target="_blank">
+                                    <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+                                  </a>
+                                  </div>
+                                  <div class="certificate-item">
+                                    <p class="item_preTitle">2024</p>
+                                    <h3 class="item_title">  Completed the projects on- Text Classification with TensorFlow</h3>
+                                    
+                                    <p class="item_subtitle"> Personifwy</p>
+                                    <a href="D:\certificates\Pushkar_Jan_2024_project_completion_45749.pdf" target="_blank">
+                                        <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+                                      </a>
+                                      </div>
+                                      <div class="certificate-item">
+                                        <p class="item_preTitle">2023</p>
+                                        <h3 class="item_title">  Completed Introduction to HTML</h3>
+                                        
+                                        <p class="item_subtitle"> Infosys</p>
+                                        <a href="D:\certificates\1-d40fd4c2-5c2e-4cdc-886c-e07df2b644a2.pdf" target="_blank">
+                                            <img src="https://thumbs.dreamstime.com/b/diploma-degree-front-view-graduation-scroll-medal-isolated-white-background-43787366.jpg" alt="Certification">
+                                          </a>
+                                          </div>
+    
+
+
+
+        </div>
+        <div class="interest">
+          ...
+        </div>
+
+
+
+        
+      </div>
+
+
+
+    </div>
+
+
+    
+    
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+</html>
